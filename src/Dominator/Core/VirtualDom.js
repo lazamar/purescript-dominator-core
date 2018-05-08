@@ -384,7 +384,7 @@ var vdom = (function() {
 
                 var subEventRoot = { tagger: tagger, parent: eventNode };
                 var domNode = render(subNode, subEventRoot);
-                domNode.elm_event_node_ref = subEventRoot;
+                domNode.event_node_ref = subEventRoot;
                 return domNode;
 
             case "text":
@@ -1115,7 +1115,7 @@ var vdom = (function() {
                     i,
                     low + 1,
                     high,
-                    domNode.elm_event_node_ref
+                    domNode.event_node_ref
                 );
 
             case "node":
@@ -1214,10 +1214,10 @@ var vdom = (function() {
                 return applyPatchesHelp(domNode, patch.data);
 
             case "p-tagger":
-                if (typeof domNode.elm_event_node_ref !== "undefined") {
-                    domNode.elm_event_node_ref.tagger = patch.data;
+                if (typeof domNode.event_node_ref !== "undefined") {
+                    domNode.event_node_ref.tagger = patch.data;
                 } else {
-                    domNode.elm_event_node_ref = { tagger: patch.data, parent: patch.eventNode };
+                    domNode.event_node_ref = { tagger: patch.data, parent: patch.eventNode };
                 }
                 return domNode;
 
@@ -1264,8 +1264,8 @@ var vdom = (function() {
         var parentNode = domNode.parentNode;
         var newNode = render(vNode, eventNode);
 
-        if (typeof newNode.elm_event_node_ref === "undefined") {
-            newNode.elm_event_node_ref = domNode.elm_event_node_ref;
+        if (typeof newNode.event_node_ref === "undefined") {
+            newNode.event_node_ref = domNode.event_node_ref;
         }
 
         if (parentNode && newNode !== domNode) {
