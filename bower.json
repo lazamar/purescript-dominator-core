@@ -1,6 +1,10 @@
 {
   "name": "purescript-dominator-core",
   "license": "BSD-2-Clause",
+  "repository": {                                                           
+      "type": "git",                                                          
+      "url": "https://github.com/lazamar/purescript-dominator-core.git"       
+  },
   "ignore": [
     "**/.*",
     "node_modules",
