@@ -1,3 +1,6 @@
+/* This file is an adaptation of Evan Czaplicki's <https://github.com/elm-lang/virtual-dom>
+*/
+
 // Compiler functions
 
 var _Native_Json = (function() {
@@ -126,7 +129,7 @@ function A3(fun, a, b, c) {
 // VIRTUAL DOM
 // =============================================================
 
-var _elm_lang$virtual_dom$Native_VirtualDom = (function() {
+var vdom = (function() {
     var STYLE_KEY = "STYLE";
     var EVENT_KEY = "EVENT";
     var ATTR_KEY = "ATTR";
@@ -1344,7 +1347,7 @@ var _elm_lang$virtual_dom$Native_VirtualDom = (function() {
                 case "NO_REQUEST":
                     throw new Error(
                         "Unexpected draw callback.\n" +
-                            "Please report this to <https://github.com/elm-lang/virtual-dom/issues>."
+                            "Please report this to <https://github.com/lazamar/purescript-dominator-core/issues>."
                     );
 
                 case "PENDING_REQUEST":
@@ -1396,11 +1399,8 @@ var _elm_lang$virtual_dom$Native_VirtualDom = (function() {
     };
 })();
 
-var vdom = _elm_lang$virtual_dom$Native_VirtualDom;
-
 exports.node_ = vdom.node;
 exports.text = vdom.text;
-// exports.custom = vdom.custom;
 exports.nodeMap = vdom.map;
 
 exports.onWithOptions_ = vdom.onWithOptions;
@@ -1415,7 +1415,4 @@ exports.lazy2 = vdom.lazy2;
 exports.lazy3 = vdom.lazy3;
 exports.keyedNode_ = vdom.keyedNode;
 
-// exports.program = vdom.program;
-// exports.programWithFlags = vdom.programWithFlags;
-// exports.staticProgram = vdom.staticProgram;
 exports.normalRenderer = vdom.normalRenderer;
