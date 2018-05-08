@@ -1,4 +1,4 @@
-module Dominator.Cmd where
+module Dominator.Core.Cmd where
 
 import Prelude
 
@@ -6,6 +6,7 @@ import Control.Monad.Cont.Trans (ContT(ContT))
 import Control.Monad.Eff (Eff, kind Effect)
 import Control.Monad.Eff.Exception (Error)
 import Control.Monad.Aff (Aff, runAff_)
+
 import Data.Either (Either(Right, Left))
 
 -- Aff is equivalent to Tasks in Dominator

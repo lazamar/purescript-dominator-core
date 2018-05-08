@@ -1,5 +1,5 @@
 {
-  "name": "purescript-dominator-vdom",
+  "name": "purescript-dominator-core",
   "ignore": [
     "**/.*",
     "node_modules",

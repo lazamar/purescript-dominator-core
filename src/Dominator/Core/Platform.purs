@@ -1,13 +1,13 @@
-module Dominator.Native.Platform 
+module Dominator.Core.Platform 
 	(HtmlRef
 	, ProgramContainer(..)
 	, program
 	) where
 
 import Prelude
-import Dominator.Native.Scheduler (Scheduler, scheduler)
-import Dominator.Native.VirtualDom (DOM, Node, Renderer, normalRenderer)
-import Dominator.Cmd (Cmds)
+import Dominator.Core.Scheduler (Scheduler, scheduler)
+import Dominator.Core.VirtualDom (DOM, Node, Renderer, normalRenderer)
+import Dominator.Core.Cmd (Cmds)
 
 import Data.Maybe (Maybe(Just, Nothing))
 import Data.Foreign (Foreign)

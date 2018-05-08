@@ -1,4 +1,4 @@
-module Dominator.Native.VirtualDom 
+module Dominator.Core.VirtualDom 
   ( DOM
   , Node
   , Renderer, normalRenderer

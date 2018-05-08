@@ -1,4 +1,4 @@
-module Dominator.Native.Scheduler where
+module Dominator.Core.Scheduler where
 
 data Scheduler = Scheduler
 
