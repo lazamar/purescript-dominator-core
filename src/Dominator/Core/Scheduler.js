@@ -1,5 +1,3 @@
-/* eslint-disable no-use-before-define, complexity */
-
 var scheduler = (function() {
     var working = false;
     var workQueue = [];
