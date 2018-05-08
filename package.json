@@ -4,7 +4,7 @@
   "description": "A Virtual Dom for Dominator. A port of elm-vdom",
   "main": "index.js",
   "author": "lazamar",
-  "license": "GPL",
+  "license": "BSD-2-Clause",
   "scripts": {
     "build": "pulp          build --no-check-main",
     "watch": "pulp --watch  build --no-check-main",
