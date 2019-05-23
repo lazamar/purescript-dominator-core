@@ -2,7 +2,7 @@
 
 [![purescript-dominator-core on Pursuit](https://pursuit.purescript.org/packages/purescript-dominator-core/badge)](https://pursuit.purescript.org/packages/purescript-dominator-core)
 
-The Virtual DOM and program core for `purescript-dominator`.
+The Virtual DOM and program core for [`purescript-dominator`](https://github.com/lazamar/purescript-dominator).
 
 The [fastest Virtual DOM there is](http://elm-lang.org/blog/blazing-fast-html-round-two), now in PureScript.
 
